@@ -38,6 +38,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "dartz",
+      "rootUri": "file:///home/akshay/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/dartz-0.10.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "equatable",
       "rootUri": "file:///home/akshay/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/equatable-2.0.5",
       "packageUri": "lib/",
@@ -170,7 +176,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2023-01-31T08:39:58.434039Z",
+  "generated": "2023-01-31T09:39:01.458002Z",
   "generator": "pub",
   "generatorVersion": "2.18.2"
 }
