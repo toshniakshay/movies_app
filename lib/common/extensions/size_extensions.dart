@@ -3,9 +3,9 @@ import 'package:movies_app/common/screen_util/screen_util.dart';
 
 extension SizeExtension on num {
 
-  num get w => ScreenUtil().setWidth(this);
+  double get w => ScreenUtil().setWidth(this).toDouble();
 
-  num get h => ScreenUtil().setHeight(this);
+  double get h => ScreenUtil().setHeight(this).toDouble();
 
-  num get sp => ScreenUtil().setSp(this);
+  double get sp => ScreenUtil().setSp(this).toDouble();
 }
