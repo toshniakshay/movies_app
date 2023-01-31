@@ -1,6 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'package:movies_app/data/core/api_client.dart';
+import 'package:movies_app/data/data_sources/remote/movie_remote_datasource.dart';
 
 void main() {
+  MovieRemoteDataSource remoteDataSource =
+      MoviesRemoteDataSourceImpl(client: ApiClient(client: http.Client()));
+  remoteDataSource.getTrendingMovies();
+  remoteDataSource.getPopularMovies();
+  remoteDataSource.getUpComingMovies();
+  remoteDataSource.getPlayingNowMovies();
+
   runApp(const MyApp());
 }
 
@@ -21,6 +31,7 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
+
   final String title;
 
   @override
@@ -44,7 +55,6 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: Column(
-
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
